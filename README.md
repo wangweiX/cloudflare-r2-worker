@@ -52,7 +52,7 @@
    binding = "BUCKET" # 将在Worker中使用的变量名
    bucket_name = "<YOUR_BUCKET_NAME>" # 您的实际R2存储桶名称
    ```
-4. 部署到Cloudflare Workers: `npx wrangler publish`
+4. 部署到Cloudflare Workers: `npm run deploy`
 
 
 ## API文档
