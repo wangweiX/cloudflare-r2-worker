@@ -3,7 +3,6 @@
  */
 import {Hono} from 'hono';
 import {cors} from 'hono/cors';
-import {CORS_HEADERS} from './config.js';
 import {isValidApiKey} from './auth.js';
 import {handleDeleteFile, handleGetFile, handleGetFiles, handlePostFile, handlePutFile,} from './request-handlers.js';
 
@@ -13,7 +12,7 @@ const app = new Hono();
 // 全局中间件：CORS 处理
 app.use('*', cors({
     origin: '*',
-    allowHeaders: Object.keys(CORS_HEADERS),
+    allowHeaders: ['Content-Length', 'Content-Type', 'Authorization', 'Accept'],
     allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     exposeHeaders: ['Content-Length', 'Content-Type'],
     maxAge: 86400,
