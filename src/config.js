@@ -21,5 +21,5 @@ export const ALLOWED_CONTENT_TYPES = [
 export const CORS_HEADERS = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Headers': '*',
 }; 
