@@ -1,0 +1,22 @@
+{
+  "name": "r2-image-uploader",
+  "version": "1.0.0",
+  "description": "API 接口用于上传图片和文件到 Cloudflare R2",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "delete": "wrangler delete"
+  },
+  "author": "wangwei",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^3.11.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.9",
+    "wrangler": "^3.0.0"
+  }
+}
