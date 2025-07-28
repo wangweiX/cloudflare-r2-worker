@@ -362,6 +362,8 @@ fabric.properties
 modules.xml
 .idea/misc.xml
 *.ipr
+.claude
+CLAUDE.md
 
 .wrangler
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,webstorm+iml,node,vuejs,nextjs,react
